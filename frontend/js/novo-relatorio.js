@@ -1,5 +1,3 @@
-const API_URL = "http://127.0.0.1:5000";
-
 document.getElementById("form-relatorio").addEventListener("submit", async (e) => {
     e.preventDefault();
   
@@ -26,7 +24,7 @@ document.getElementById("form-relatorio").addEventListener("submit", async (e) =
     const mensagemSucesso = document.getElementById("mensagem-sucesso");
   
     try {
-      const resposta = await fetch(API_URL + "/api/relatorios", {
+      const resposta = await fetch(config.API_URL + "/api/relatorios", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`

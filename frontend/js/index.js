@@ -1,4 +1,3 @@
-const API_URL = "http://127.0.0.1:5000/api/relatorios";
 let paginaAtual = 1;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -6,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function carregarRelatorios(pagina) {
-  fetch(`${API_URL}?page=${pagina}`)
+  fetch(config.API_URL + `/api/relatorios?page=${pagina}`)
     .then(response => {
       if (!response.ok) throw new Error("Erro ao buscar relatórios.");
       return response.json();
