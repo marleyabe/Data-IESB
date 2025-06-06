@@ -34,7 +34,7 @@ function exibirRelatorios(relatorios) {
       <div class="relatorio-card p-0">
         <div style="height: 120px; overflow: hidden;">
         
-          <img src="/static/${r.caminho_pasta}/capa.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Capa do relatório">
+          <img src="../backend/static/${r.caminho_pasta}/capa.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Capa do relatório">
         </div>
         <div class="p-2">
           <h5 class="mb-1">${r.assunto}</h5>

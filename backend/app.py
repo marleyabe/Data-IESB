@@ -28,11 +28,7 @@ def create_app():
 
     @app.route("/")
     def index():
-        return send_from_directory("../frontend", "index.html")
-
-    @app.route("/<path:filename>")
-    def frontend_files(filename):
-        return send_from_directory("../frontend", filename)
+        return "API"
 
     return app
 
