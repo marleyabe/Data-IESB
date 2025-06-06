@@ -3,7 +3,6 @@ import os
 import uuid
 from db.relatorios import salvar_relatorio, editar_relatorio, listar_relatorios_paginado, listar_relatorios_por_aluno, deletar_relatorio, buscar_relatorio
 from flask import Blueprint, jsonify
-import shutil
 
 from utils.arquivos import carregar_arquivo, remover_arquivo
 from utils.streamlit import encerrar_porta, buscar_streamlit, iniciar_streamlit

@@ -1,5 +1,4 @@
 from flask import Blueprint, request, jsonify
-import psycopg2
 import jwt
 import os
 from werkzeug.security import check_password_hash

@@ -9,10 +9,8 @@
 
 from flask import Flask, send_from_directory
 from flask_cors import CORS
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
 
 from auth import auth_bp
 from relatorios import relatorios_bp
