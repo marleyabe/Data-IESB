@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then((obj) => {
       const iframe = document.querySelector("iframe");
-      iframe.src = `http://localhost:8501/relatorio/${obj.relatorio.id}`;
+      iframe.src = config.STREAMLIT_URL + `/relatorio/${obj.relatorio.id}`;
+      console.log()
     })
     .catch((err) => {
       console.error(err);
